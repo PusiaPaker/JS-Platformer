@@ -165,7 +165,7 @@ class Box{
     }
 }
 
-var BoxWin = new Box(450, 500, 100, 100, 'rgb(255, 0, 255)')
+var BoxWin = new Box(470, 520, 80, 80, 'rgb(255, 0, 255)')
 var BoxPlatform12 = new Box(400, 100, 50 , 20, 'rgb(255, 255, 255)')
 var BoxPlatform11 = new Box(300, 80, 50, 20, 'rgb(255, 255, 255)')
 var BoxPlatform10 = new Box(200, 80, 50, 20, 'rgb(255, 255, 255)')
@@ -287,7 +287,7 @@ function draw(){
     ctx.fillText(TempText, 10, 50);
 
 
-    BoxWin.draw();
+    
     BoxPlatform12.draw();
     BoxPlatform11.draw();
     BoxPlatform10.draw();
@@ -297,10 +297,11 @@ function draw(){
     BoxPlatform6.draw();
     BoxPlatform5.draw();
     BoxPlatform4.draw();
-    BoxPlatform3.draw();
+    BoxPlatform3.draw();    
     BoxPlatform2.draw();
     BoxPlatform.draw();
     PlayerObject.draw();
+    BoxWin.draw();
 }
 
 function gameLoop(timeStamp){
